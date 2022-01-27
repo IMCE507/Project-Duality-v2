@@ -26,6 +26,7 @@ public class Movement : MonoBehaviour
     public float JumpPower;
     public float JumpPull;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -97,6 +98,7 @@ public class Movement : MonoBehaviour
 
         RB2D.velocity = new Vector2(MovementX * MoveSpeed, RB2D.velocity.y);
     }
+
 
     private void OnDrawGizmos()
     {

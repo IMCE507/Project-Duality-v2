@@ -100,6 +100,9 @@ MonoBehaviour:
   EnemyType: 1
   transitionColors: {fileID: 11400000, guid: dda536dabc82ca5498ae5e857c796bc2, type: 2}
   MaxHealth: 5
+  DissolveTime: 2
+  HitFlashTime: 0.25
+  InmunityFlashTime: 1
 --- !u!50 &236241136996954310
 Rigidbody2D:
   serializedVersion: 4

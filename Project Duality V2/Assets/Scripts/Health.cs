@@ -11,9 +11,14 @@ public class Health : MonoBehaviour
     public int MaxHealth;
     int CurrentHealth;
 
+    public float DissolveTime;
+    public float HitFlashTime;
+    public float InmunityFlashTime;
+
     MeshRenderer Mrend;
     Material EnemyMaterial;
 
+    Tween FlashTween;
 
     private void Awake()
     {
@@ -27,7 +32,7 @@ public class Health : MonoBehaviour
     {
         if (BulletType == EnemyType)
         {
-            FlashEffect("Flash_Amount");
+            FlashEffect("Flash_Amount", HitFlashTime);
             CurrentHealth -= damage;
             if (CurrentHealth <= 0)
             {
@@ -36,20 +41,25 @@ public class Health : MonoBehaviour
         }
         else
         {
-            FlashEffect("Inmunity_Amount");
+            FlashEffect("Inmunity_Amount", InmunityFlashTime);
         }
     }
 
     private void Death()
     {
-        Destroy(gameObject);
+        Collider2D enemyColl = gameObject.GetComponent<Collider2D>();
+        Rigidbody2D rb2 = enemyColl.attachedRigidbody;
+
+        enemyColl.enabled = false;
+        rb2.bodyType = RigidbodyType2D.Static;
+        EnemyMaterial.DOFloat(1f, "Dissolve_Amount", DissolveTime).OnComplete((() => Destroy(gameObject)));
     }
 
-    void FlashEffect(string EffectName)
+    void FlashEffect(string EffectName, float Duration)
     {
-        DOTween.KillAll();
+        FlashTween?.Kill();
         EnemyMaterial.SetFloat(EffectName, 1f);
-        EnemyMaterial.DOFloat(0f, EffectName, 1f);
+        FlashTween = EnemyMaterial.DOFloat(0f, EffectName, Duration);
     }
 
     void SetEnemyColors()

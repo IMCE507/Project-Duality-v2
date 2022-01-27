@@ -33,10 +33,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - Dissolve_Amount: 0
+    - Dissolve_Edge_Width: 0.1
+    - Dissolve_Noise_Scale: 40
     - Flash_Amount: 0
     - Fresnel: 1
+    - FresnelAmount: 1
     - Inmunity_Amount: 0
     m_Colors:
+    - Dissolve_Edge_Color: {r: 127.999985, g: 83.099464, b: 0, a: 1}
     - Enemy_Color: {r: 0.9150943, g: 0.9150943, b: 0.9150943, a: 1}
     - Inmunity_Color: {r: 12.620971, g: 0, b: 20.920336, a: 1}
   m_BuildTextureStacks: []
