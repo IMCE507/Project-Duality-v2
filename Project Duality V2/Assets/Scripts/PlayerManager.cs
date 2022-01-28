@@ -17,7 +17,9 @@ public class PlayerManager : MonoBehaviour
     Rigidbody2D rb2d;
 
     public int MaxHealth;
-    int CurrentHealth;
+
+    [SerializeField]
+    PlayerHealthDataSO HealthData;
 
     Tween FlashTween;
 
@@ -32,7 +34,7 @@ public class PlayerManager : MonoBehaviour
         PlayerMaterial.SetFloat("Transition_Amount", 0f);
         PlayerMaterial.SetColor("Inmunity_Color", TransitionColors.LightInmunityColor);
         rb2d = GetComponent<Rigidbody2D>();
-        CurrentHealth = MaxHealth;
+        HealthData.MaxHealth = MaxHealth;
     }
 
 
@@ -93,8 +95,8 @@ public class PlayerManager : MonoBehaviour
         if (BulletType == CurrentTransition)
         {
             FlashEffect("Flash_Amount", 0.2f);
-            CurrentHealth -= damage;
-            if (CurrentHealth <= 0)
+            HealthData.CurrentHealth -= damage;
+            if (HealthData.CurrentHealth <= 0)
             {
                 Death();
             }
