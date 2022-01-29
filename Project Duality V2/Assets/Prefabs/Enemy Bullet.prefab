@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1237530164397542121}
   - component: {fileID: 5438059339129276477}
   - component: {fileID: -4239701700518932503}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ MonoBehaviour:
   BulletDamage: 0
   rb2D: {fileID: -4239701700518932503}
   mrend: {fileID: 5113594003451681412}
-  BulletColor: {r: 1, g: 0.41361257, b: 0, a: 1}
+  BulletColor: {r: 0.6039216, g: 0, b: 1, a: 1}
 --- !u!50 &-4239701700518932503
 Rigidbody2D:
   serializedVersion: 4

@@ -5566,10 +5566,10 @@
     "m_Guid": {
         "m_GuidSerialized": "33591ef7-a6c7-4b84-9231-bb9fafacc25b"
     },
-    "m_Name": "Immune",
+    "m_Name": "Invulnerability",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Immune",
-    "m_DefaultReferenceName": "IMMUNE",
+    "m_RefNameGeneratedByDisplayName": "Invulnerability",
+    "m_DefaultReferenceName": "INVULNERABILITY",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_KeywordType": 0,
@@ -5655,7 +5655,7 @@
     "m_Group": {
         "m_Id": ""
     },
-    "m_Name": "Immune",
+    "m_Name": "Invulnerability",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {

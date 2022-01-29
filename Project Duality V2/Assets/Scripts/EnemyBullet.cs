@@ -21,7 +21,7 @@ public class EnemyBullet : MonoBehaviour
     private void Awake()
     {
         Bulletmaterial = mrend.material;
-        //Destroy(gameObject, 4f);
+        Destroy(gameObject, 4f);
     }
 
     private void Start()
@@ -33,11 +33,8 @@ public class EnemyBullet : MonoBehaviour
     {
         if (collision.CompareTag(("Player")))
         {
-            PlayerManager.instance.playerState = PlayerState.Damage;
-            PlayerManager.instance.TakeDamage(BulletDamage, BulletType);
-
             Vector2 BulletDirection = (gameObject.transform.position - PlayerManager.instance.transform.position).normalized;
-            PlayerManager.instance.Knockback(BulletDirection);
+            PlayerManager.instance.TakeDamage(BulletDamage, BulletType, BulletDirection);
             Destroy(gameObject);
         }
     }

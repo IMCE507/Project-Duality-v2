@@ -9,12 +9,15 @@ public class Health : MonoBehaviour
     public TransitionType EnemyType;
     public TransitionColorsScriptable transitionColors;
     public int MaxHealth;
-    int CurrentHealth;
+
+    [HideInInspector]
+    public int CurrentHealth;
 
     public float DissolveTime;
     public float HitFlashTime;
     public float InmunityFlashTime;
 
+    [SerializeField]
     MeshRenderer Mrend;
     Material EnemyMaterial;
 
@@ -22,7 +25,6 @@ public class Health : MonoBehaviour
 
     private void Awake()
     {
-        Mrend = GetComponent<MeshRenderer>();
         EnemyMaterial = Mrend.material;
         CurrentHealth = MaxHealth;
         SetEnemyColors();
@@ -53,6 +55,7 @@ public class Health : MonoBehaviour
         enemyColl.enabled = false;
         rb2.bodyType = RigidbodyType2D.Static;
         EnemyMaterial.DOFloat(1f, "Dissolve_Amount", DissolveTime).OnComplete((() => Destroy(gameObject)));
+        
     }
 
     void FlashEffect(string EffectName, float Duration)

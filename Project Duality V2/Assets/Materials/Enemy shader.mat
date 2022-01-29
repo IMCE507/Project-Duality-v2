@@ -35,7 +35,7 @@ Material:
     m_Floats:
     - Dissolve_Amount: 0
     - Dissolve_Edge_Width: 0.1
-    - Dissolve_Noise_Scale: 40
+    - Dissolve_Noise_Scale: 108.99
     - Flash_Amount: 0
     - Fresnel: 1
     - FresnelAmount: 1

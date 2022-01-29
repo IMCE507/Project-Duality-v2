@@ -24,6 +24,8 @@ public class PlayerManager : MonoBehaviour
     Tween FlashTween;
 
     public float KnockBackStrenght;
+    public float InvulnerabilityTime;
+    public float hitStopTime;
 
     private void Awake()
     {
@@ -45,7 +47,7 @@ public class PlayerManager : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.T))
         {
-            TakeDamage(1, TransitionType.Light);
+            TakeDamage(1, TransitionType.Light, Vector2.zero);
         }
 
         switch(playerState)
@@ -85,6 +87,7 @@ public class PlayerManager : MonoBehaviour
 
     public void Death()
     {
+        StopAllCoroutines();
         rb2d.velocity = Vector2.zero;
         playerState = PlayerState.death;
         animator.SetLayerWeight(1, 0f);
@@ -92,21 +95,29 @@ public class PlayerManager : MonoBehaviour
 
     }
 
-    public void TakeDamage(int damage, TransitionType BulletType)
+    public void TakeDamage(int damage, TransitionType BulletType, Vector2 Direction)
     {
         if (BulletType == CurrentTransition)
         {
+            playerState = PlayerState.Damage;
             FlashEffect("Flash_Amount", 0.2f);
             HealthData.CurrentHealth -= damage;
+            HitStop.instance?.Stop(hitStopTime);
+            StartCoroutine(Knockback(Direction * KnockBackStrenght));
             if (HealthData.CurrentHealth <= 0)
             {
                 Death();
+            }else
+            {
+                StartCoroutine(Invulnerability(InvulnerabilityTime));
             }
+
         }
         else
         {
             FlashEffect("Inmunity_Amount", 1f);
         }
+
     }
 
     void FlashEffect(string EffectName, float Duration)
@@ -116,12 +127,23 @@ public class PlayerManager : MonoBehaviour
         FlashTween = PlayerMaterial.DOFloat(0f, EffectName, Duration);
     }
 
-    public void Knockback(Vector2 Direction)
+    IEnumerator Knockback(Vector2 Direction)
     {
-        Debug.Log(Direction);
-        //rb2d.velocity = -Direction * KnockBackStrenght;
+        Direction.y = 0;
         rb2d.AddForce(-Direction * KnockBackStrenght, ForceMode2D.Impulse);
+        yield return new WaitForSeconds(0.3f);
+        playerState = PlayerState.neutral;
     }
+
+    IEnumerator Invulnerability(float Duration)
+    {
+        PlayerMaterial.EnableKeyword("INVULNERABILITY");
+        Physics2D.IgnoreLayerCollision(7, 6);
+        yield return new WaitForSeconds(Duration);
+        PlayerMaterial.DisableKeyword("INVULNERABILITY");
+        Physics2D.IgnoreLayerCollision(7, 6, false);
+    }
+
 }
 
 

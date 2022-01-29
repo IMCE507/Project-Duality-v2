@@ -40,7 +40,11 @@ Material:
     - Edge_Width: 0.04
     - Flash_Amount: 0
     - FresnelAmount: 0.5
+    - IMMUNE: 0
+    - INVULNERABILITY: 0
     - Inmunity_Amount: 0
+    - Inmunity_Fresnel_Amount: 1
+    - Invulnerability_Speed: 10
     - Noise_Scale: 100
     - TRANSITION_TYPE: 0
     - Transition_Amount: 1
@@ -50,6 +54,7 @@ Material:
     - Dark_Color: {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 0}
     - Edge_Color: {r: 766.9961, g: 0, b: 0, a: 1}
     - Inmunity_Color: {r: 1, g: 1, b: 1, a: 0}
+    - Invulnerability_Color: {r: 0, g: 30, b: 76.09947, a: 1}
     - Light_Color: {r: 1, g: 1, b: 1, a: 1}
     - Moon_Color: {r: 0.6586283, g: 0.48742133, b: 1, a: 1}
     - Sun_Color: {r: 1, g: 1, b: 1, a: 1}
