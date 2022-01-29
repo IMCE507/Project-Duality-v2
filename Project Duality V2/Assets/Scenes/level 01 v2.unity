@@ -3044,7 +3044,7 @@ Transform:
   m_LocalScale: {x: 99.022385, y: 5.0734577, z: 4.8864}
   m_Children: []
   m_Father: {fileID: 1273854554}
-  m_RootOrder: 28
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &120897783
 BoxCollider2D:
@@ -3100,7 +3100,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 120897781}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4946,7 +4946,7 @@ Transform:
   m_LocalScale: {x: 35.61541, y: 5.0734577, z: 4.8864}
   m_Children: []
   m_Father: {fileID: 1273854554}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &182398158
 BoxCollider2D:
@@ -5002,7 +5002,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 182398156}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7386,7 +7386,7 @@ Transform:
   m_LocalScale: {x: 48.981876, y: 5.0734577, z: 4.8864}
   m_Children: []
   m_Father: {fileID: 1273854554}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &270741906
 BoxCollider2D:
@@ -7442,7 +7442,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270741904}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -8865,7 +8865,7 @@ Transform:
   m_LocalScale: {x: 12.643561, y: 5.0734577, z: 4.8864}
   m_Children: []
   m_Father: {fileID: 1273854554}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &314043135
 BoxCollider2D:
@@ -8921,7 +8921,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314043133}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -14581,7 +14581,7 @@ Transform:
   m_LocalScale: {x: 4.8864, y: 27.058441, z: 4.8864}
   m_Children: []
   m_Father: {fileID: 1273854554}
-  m_RootOrder: 25
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &496616756
 BoxCollider2D:
@@ -14637,7 +14637,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 496616754}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -17502,7 +17502,7 @@ Transform:
   m_LocalScale: {x: 12.643561, y: 5.0734577, z: 4.8864}
   m_Children: []
   m_Father: {fileID: 1273854554}
-  m_RootOrder: 29
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &608155700
 BoxCollider2D:
@@ -17558,7 +17558,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 608155698}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -22015,7 +22015,7 @@ Transform:
   m_LocalScale: {x: 12.643561, y: 5.0734577, z: 4.8864}
   m_Children: []
   m_Father: {fileID: 1273854554}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &784310400
 BoxCollider2D:
@@ -22071,7 +22071,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784310398}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -25372,7 +25372,7 @@ Transform:
   m_LocalScale: {x: 12.643561, y: 5.0734577, z: 4.8864}
   m_Children: []
   m_Father: {fileID: 1273854554}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &913423834
 BoxCollider2D:
@@ -25428,7 +25428,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 913423832}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -28933,7 +28933,7 @@ Transform:
   m_LocalScale: {x: 12.643561, y: 5.0734577, z: 4.8864}
   m_Children: []
   m_Father: {fileID: 1273854554}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &1007570603
 BoxCollider2D:
@@ -28989,7 +28989,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007570601}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -32562,7 +32562,7 @@ Transform:
   m_LocalScale: {x: 12.643561, y: 5.0734577, z: 4.8864}
   m_Children: []
   m_Father: {fileID: 1273854554}
-  m_RootOrder: 30
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &1144566059
 BoxCollider2D:
@@ -32618,7 +32618,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1144566057}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -36309,7 +36309,6 @@ Transform:
   - {fileID: 73288285}
   - {fileID: 1960938559}
   - {fileID: 1476217008}
-  - {fileID: 1785833576}
   - {fileID: 913423833}
   - {fileID: 314043134}
   - {fileID: 2005595455}
@@ -36320,12 +36319,13 @@ Transform:
   - {fileID: 1544885494}
   - {fileID: 1634283102}
   - {fileID: 784310399}
+  - {fileID: 1144566058}
+  - {fileID: 608155699}
+  - {fileID: 120897782}
+  - {fileID: 1785833576}
   - {fileID: 496616755}
   - {fileID: 2051666341}
   - {fileID: 2033864113}
-  - {fileID: 120897782}
-  - {fileID: 608155699}
-  - {fileID: 1144566058}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -38039,7 +38039,7 @@ Transform:
   m_LocalScale: {x: 12.643561, y: 5.0734577, z: 4.8864}
   m_Children: []
   m_Father: {fileID: 1273854554}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1323816668
 BoxCollider2D:
@@ -38095,7 +38095,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323816666}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -39657,7 +39657,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1.3333334, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -45956,7 +45956,7 @@ Transform:
   m_LocalScale: {x: 12.643561, y: 5.0734577, z: 4.8864}
   m_Children: []
   m_Father: {fileID: 1273854554}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &1544885495
 BoxCollider2D:
@@ -46012,7 +46012,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1544885493}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -48629,7 +48629,7 @@ Transform:
   m_LocalScale: {x: 35.61541, y: 5.0734577, z: 4.8864}
   m_Children: []
   m_Father: {fileID: 1273854554}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1634283103
 BoxCollider2D:
@@ -48685,7 +48685,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1634283101}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -53384,7 +53384,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1785833572}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -53439,7 +53439,7 @@ Transform:
   m_LocalScale: {x: 4.8864, y: 27.058441, z: 4.8864}
   m_Children: []
   m_Father: {fileID: 1273854554}
-  m_RootOrder: 14
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1785833577
 Rigidbody2D:
@@ -58728,7 +58728,7 @@ Transform:
   m_LocalScale: {x: 12.643561, y: 5.0734577, z: 4.8864}
   m_Children: []
   m_Father: {fileID: 1273854554}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2005595456
 BoxCollider2D:
@@ -58784,7 +58784,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2005595454}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -59293,7 +59293,7 @@ GameObject:
   - component: {fileID: 2033864115}
   - component: {fileID: 2033864114}
   m_Layer: 0
-  m_Name: blockWayCube01 (3)
+  m_Name: blockWayCube04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59311,7 +59311,7 @@ Transform:
   m_LocalScale: {x: 4.8864, y: 27.058441, z: 4.8864}
   m_Children: []
   m_Father: {fileID: 1273854554}
-  m_RootOrder: 27
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2033864114
 BoxCollider2D:
@@ -59367,7 +59367,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2033864112}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -59888,7 +59888,7 @@ Transform:
   m_LocalScale: {x: 4.8864, y: 85.25154, z: 4.8864}
   m_Children: []
   m_Father: {fileID: 1273854554}
-  m_RootOrder: 26
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2051666342
 BoxCollider2D:
@@ -59944,7 +59944,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051666340}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
