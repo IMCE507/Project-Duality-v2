@@ -23,6 +23,8 @@ public class PlayerManager : MonoBehaviour
 
     Tween FlashTween;
 
+    public float KnockBackStrenght;
+
     private void Awake()
     {
         instance = this;
@@ -112,6 +114,13 @@ public class PlayerManager : MonoBehaviour
         FlashTween?.Kill();
         PlayerMaterial.SetFloat(EffectName, 1f);
         FlashTween = PlayerMaterial.DOFloat(0f, EffectName, Duration);
+    }
+
+    public void Knockback(Vector2 Direction)
+    {
+        Debug.Log(Direction);
+        //rb2d.velocity = -Direction * KnockBackStrenght;
+        rb2d.AddForce(-Direction * KnockBackStrenght, ForceMode2D.Impulse);
     }
 }
 
