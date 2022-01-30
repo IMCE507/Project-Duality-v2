@@ -104,6 +104,7 @@ MonoBehaviour:
   HitFlashTime: 0.25
   InmunityFlashTime: 1
   Mrend: {fileID: 2854039191111507697}
+  Points: 400
 --- !u!114 &1147706908910579346
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -25,6 +25,9 @@ public class Health : MonoBehaviour
 
     public int Points;
 
+    [SerializeField]
+    Battle battle;
+
     private void Awake()
     {
         EnemyMaterial = Mrend.material;
@@ -58,6 +61,7 @@ public class Health : MonoBehaviour
         rb2.bodyType = RigidbodyType2D.Static;
         EnemyMaterial.DOFloat(1f, "Dissolve_Amount", DissolveTime).OnComplete((() => Destroy(gameObject)));
         PlayerManager.instance?.AddPoints(Points);
+        BattleVerify();
         
     }
 
@@ -78,6 +82,15 @@ public class Health : MonoBehaviour
         {
             EnemyMaterial.SetColor("Enemy_Color", transitionColors.DarkColor);
             EnemyMaterial.SetColor("Inmunity_Color", transitionColors.DarkInmunityColor * 20f);
+        }
+    }
+
+    private void BattleVerify()
+    {
+        if (battle != null) 
+        {
+            battle.NumberEnemies--;
+            battle.VerifyEnemies();
         }
     }
 }

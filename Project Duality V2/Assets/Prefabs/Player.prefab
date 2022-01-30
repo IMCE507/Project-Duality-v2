@@ -1039,6 +1039,7 @@ MonoBehaviour:
   animator: {fileID: 2372249178404829456}
   MaxHealth: 5
   HealthData: {fileID: 11400000, guid: 8c213a0f2e7aa5842a46108f04b20d51, type: 2}
+  PointsData: {fileID: 11400000, guid: 0df439c64650ff54ba3674f48dabce2f, type: 2}
   KnockBackStrenght: 5
   InvulnerabilityTime: 2
   hitStopTime: 0.1

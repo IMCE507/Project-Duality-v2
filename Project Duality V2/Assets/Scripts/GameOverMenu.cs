@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using DG.Tweening;
 
-public class GameOverMenu : MonoBehaviour
+public class GameOverMenu : PlayQuitBTNS
 {
     public static GameOverMenu instance;
 
@@ -28,14 +28,5 @@ public class GameOverMenu : MonoBehaviour
         
     }
 
-    public void Restart()
-    {
-
-    }
-
-    public void Quit()
-    {
-
-    }
 
 }

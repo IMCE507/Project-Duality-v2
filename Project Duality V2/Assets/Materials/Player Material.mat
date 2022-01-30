@@ -55,7 +55,7 @@ Material:
     - Edge_Color: {r: 766.9961, g: 0, b: 0, a: 1}
     - Inmunity_Color: {r: 0, g: 1, b: 0, a: 1}
     - Invulnerability_Color: {r: 0, g: 30, b: 76.09947, a: 1}
-    - Light_Color: {r: 0.59607846, g: 0.59607846, b: 0.59607846, a: 1}
+    - Light_Color: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
     - Moon_Color: {r: 0.6586283, g: 0.48742133, b: 1, a: 1}
     - Sun_Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

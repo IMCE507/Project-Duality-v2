@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PauseMenu : MonoBehaviour
+public class PauseMenu : PlayQuitBTNS
 {
     [SerializeField]
     CanvasGroup PauseScreen;
@@ -41,4 +41,23 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    public void Resume()
+    {
+        IsPaused = false;
+        Time.timeScale = 1f;
+        PauseScreen.alpha = 0f;
+        PauseScreen.interactable = false;
+    }
+
+    public override void Restart()
+    {
+        Resume();
+        base.Restart();
+    }
+
+    public override void QuitGame()
+    {
+        Resume();
+        base.QuitGame();
+    }
 }

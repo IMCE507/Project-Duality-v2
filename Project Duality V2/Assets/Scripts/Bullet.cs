@@ -21,7 +21,7 @@ public class Bullet : MonoBehaviour
     private void Awake()
     {
         Bulletmaterial = mrend.material;
-        Destroy(gameObject, 4f);
+        Destroy(gameObject, 2f);
     }
 
     private void Start()

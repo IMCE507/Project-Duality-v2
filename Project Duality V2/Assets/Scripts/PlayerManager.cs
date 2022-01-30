@@ -14,15 +14,17 @@ public class PlayerManager : MonoBehaviour
     public TransitionType CurrentTransition;
     public PlayerState playerState;
     public Animator animator;
-    Rigidbody2D rb2d;
+    [HideInInspector]
+    public Rigidbody2D rb2d;
 
     public int MaxHealth;
 
     [SerializeField]
     PlayerHealthDataSO HealthData;
 
-    [SerializeField]
-    FloatSO PointsData;
+
+    public FloatSO PointsData;
+    public Transform CheckPoint;
 
     Tween FlashTween;
 
@@ -41,11 +43,12 @@ public class PlayerManager : MonoBehaviour
         PlayerMaterial.SetFloat("Transition_Amount", 0f);
         PlayerMaterial.SetColor("Inmunity_Color", TransitionColors.LightInmunityColor);
         rb2d = GetComponent<Rigidbody2D>();
-        SceneTransition.instace?.StartFadeIn();
+
     }
 
     private void Start()
     {
+        SceneTransition.instace?.StartFadeIn();
         PointsData.Value = 0;
         HealthData.MaxHealth = MaxHealth;
     }
@@ -162,4 +165,4 @@ public class PlayerManager : MonoBehaviour
 
 
 public enum TransitionType { Light, Dark }
-public enum PlayerState {Damage, neutral, InTransition, Airborne, death }
+public enum PlayerState {Damage, neutral, InTransition, Airborne, death, end }
