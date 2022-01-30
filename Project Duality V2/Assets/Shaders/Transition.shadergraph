@@ -25,9 +25,6 @@
             "m_Id": "f666f84bd9824df3ae5860c05de01672"
         },
         {
-            "m_Id": "19ee118e442a4605bfa125e0b1ac5569"
-        },
-        {
             "m_Id": "e91d4f02508c4fd5a0dd78d10477e0d6"
         },
         {
@@ -1566,31 +1563,6 @@
         "a": 1.0
     },
     "m_ColorMode": 1
-}
-
-{
-    "m_SGVersion": 1,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
-    "m_ObjectId": "19ee118e442a4605bfa125e0b1ac5569",
-    "m_Guid": {
-        "m_GuidSerialized": "874978b4-c0fa-4430-a111-4bd6aed8ae65"
-    },
-    "m_Name": "Transparency",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Transparency",
-    "m_DefaultReferenceName": "Transparency",
-    "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": 1.0,
-    "m_FloatType": 0,
-    "m_RangeValues": {
-        "x": 0.0,
-        "y": 1.0
-    }
 }
 
 {
@@ -4691,7 +4663,7 @@
         "b": 1.0,
         "a": 0.0
     },
-    "m_ColorMode": 1
+    "m_ColorMode": 0
 }
 
 {

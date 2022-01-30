@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BulletType: 0
-  BulletDamage: 2
+  BulletDamage: 1
   rb2D: {fileID: -7680319676529626060}
   mrend: {fileID: 3545829529696256469}
   BulletColor: {r: 0, g: 0, b: 0, a: 0}

@@ -37,6 +37,13 @@ public class Bullet : MonoBehaviour
             Enemy.TakeDamage(BulletDamage, BulletType);
             Destroy(gameObject);
         }
+
+        if (collision.CompareTag(("Shield")))
+        {
+            var EnemyShield = collision.gameObject.GetComponent<Shield>();
+            EnemyShield.TakeDamage(BulletDamage, BulletType);
+            Destroy(gameObject);
+        }
     }
 
 }

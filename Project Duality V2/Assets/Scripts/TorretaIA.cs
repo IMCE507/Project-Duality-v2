@@ -22,22 +22,26 @@ public class TorretaIA : MonoBehaviour
     [SerializeField]
     int Damage;
 
-    
+    float TimeToShoot;
 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(Shoot());
+        TimeToShoot = 0f;
     }
 
-    IEnumerator Shoot()
+    private void Update()
     {
-        ShootBullet();
-        yield return new WaitForSeconds(secondsToShoot);
-        StartCoroutine(Shoot());
+        TimeToShoot += Time.deltaTime;
+
         if (HealthScript.CurrentHealth <= 0)
+            return;
+
+
+        if (TimeToShoot >= secondsToShoot) 
         {
-            StopAllCoroutines();
+            TimeToShoot = 0f;
+            ShootBullet();
         }
     }
 
@@ -56,11 +60,11 @@ public class TorretaIA : MonoBehaviour
     {
         if (HealthScript.EnemyType == TransitionType.Light)
         {
-            return HealthScript.transitionColors.LightColor;
+            return new Color(38.04974f, 15.39601f, 0);
         }
         else
         {
-            return HealthScript.transitionColors.DarkColor;
+            return new Color(21.323f, 0, 38.04974f);
         }
     }
 }

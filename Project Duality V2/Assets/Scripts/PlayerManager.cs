@@ -21,6 +21,9 @@ public class PlayerManager : MonoBehaviour
     [SerializeField]
     PlayerHealthDataSO HealthData;
 
+    [SerializeField]
+    FloatSO PointsData;
+
     Tween FlashTween;
 
     public float KnockBackStrenght;
@@ -38,9 +41,14 @@ public class PlayerManager : MonoBehaviour
         PlayerMaterial.SetFloat("Transition_Amount", 0f);
         PlayerMaterial.SetColor("Inmunity_Color", TransitionColors.LightInmunityColor);
         rb2d = GetComponent<Rigidbody2D>();
-        HealthData.MaxHealth = MaxHealth;
+        SceneTransition.instace?.StartFadeIn();
     }
 
+    private void Start()
+    {
+        PointsData.Value = 0;
+        HealthData.MaxHealth = MaxHealth;
+    }
 
     // Update is called once per frame
     void Update()
@@ -68,13 +76,13 @@ public class PlayerManager : MonoBehaviour
     {
         if (CurrentTransition == TransitionType.Light)
         {
-            PlayerMaterial.SetColor("Inmunity_Color", TransitionColors.LightInmunityColor);
+            PlayerMaterial.SetColor("Inmunity_Color", Color.red);
             PlayerMaterial.DOFloat(1f, "Transition_Amount", 1f);
             CurrentTransition = TransitionType.Dark;
         }
         else
         {
-            PlayerMaterial.SetColor("Inmunity_Color", TransitionColors.DarkInmunityColor);
+            PlayerMaterial.SetColor("Inmunity_Color", Color.green);
             PlayerMaterial.DOFloat(0f, "Transition_Amount", 1f);
             CurrentTransition = TransitionType.Light;
         }
@@ -88,11 +96,12 @@ public class PlayerManager : MonoBehaviour
     public void Death()
     {
         StopAllCoroutines();
+        Physics2D.IgnoreLayerCollision(7, 6);
         rb2d.velocity = Vector2.zero;
         playerState = PlayerState.death;
         animator.SetLayerWeight(1, 0f);
         animator.SetTrigger("Dead");
-
+        GameOverMenu.instance?.ShowGameOverScreen(PointsData.Value);
     }
 
     public void TakeDamage(int damage, TransitionType BulletType, Vector2 Direction)
@@ -142,6 +151,11 @@ public class PlayerManager : MonoBehaviour
         yield return new WaitForSeconds(Duration);
         PlayerMaterial.DisableKeyword("INVULNERABILITY");
         Physics2D.IgnoreLayerCollision(7, 6, false);
+    }
+
+    public void AddPoints(int points)
+    {
+        PointsData.Value += points;
     }
 
 }

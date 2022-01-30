@@ -23,6 +23,8 @@ public class Health : MonoBehaviour
 
     Tween FlashTween;
 
+    public int Points;
+
     private void Awake()
     {
         EnemyMaterial = Mrend.material;
@@ -55,6 +57,7 @@ public class Health : MonoBehaviour
         enemyColl.enabled = false;
         rb2.bodyType = RigidbodyType2D.Static;
         EnemyMaterial.DOFloat(1f, "Dissolve_Amount", DissolveTime).OnComplete((() => Destroy(gameObject)));
+        PlayerManager.instance?.AddPoints(Points);
         
     }
 

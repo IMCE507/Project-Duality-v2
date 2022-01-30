@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a562928a9871124e89ec1ea25def0aa, type: 3}
   m_Name: Color Transitions
   m_EditorClassIdentifier: 
-  LightColor: {r: 1, g: 1, b: 1, a: 1}
+  LightColor: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
   LightInmunityColor: {r: 1, g: 0.140694, b: 0, a: 1}
   DarkColor: {r: 0.4766481, g: 0.20416513, b: 0.8773585, a: 1}
   DarkInmunityColor: {r: 0.6032872, g: 0, b: 1, a: 1}

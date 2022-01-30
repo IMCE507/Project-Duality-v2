@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - fallDetector
+  - Shield
   layers:
   - Default
   - TransparentFX

@@ -33,8 +33,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Fresnel_Power: 2
+    - Fresnel_Power: 1
     m_Colors:
     - Base_Color: {r: 1, g: 0, b: 0, a: 1}
-    - FresnelColor: {r: 31.999996, g: 0, b: 23.405577, a: 1}
+    - FresnelColor: {r: 38.049744, g: 15.396006, b: 0, a: 1}
   m_BuildTextureStacks: []
